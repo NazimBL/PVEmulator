@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/layout"
+    tools:context="com.micro_tech.pv_emulator.MainActivity">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="Main Panel"
+        android:id="@+id/text_id" />
+
+    <com.jjoe64.graphview.GraphView
+        android:layout_width="fill_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="500dp"
+        android:layout_gravity="center"
+        android:id="@+id/graph"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/a"
+            android:id="@+id/a"
+            />
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/b"
+            android:src="@drawable/b"/>
+
+        <ImageButton
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/start"
+            android:id="@+id/c"
+            />
+
+    </LinearLayout>
+</LinearLayout>
